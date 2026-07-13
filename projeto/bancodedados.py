@@ -3,20 +3,12 @@ imoveis = []
 inquilinos = []
 contratos = []
 
-id_proprietario = 1
 id_imovel = 1
 id_inquilino = 1
 id_contrato = 1
 
 
-novo_proprietario = {
 
-    "id" : None,
-    "nome" : None,
-    "cpf" : None,
-    "imoveis" : []
-    
-}
 
 novo_imovel = {
 
