@@ -58,7 +58,8 @@ def listar():
 def excluir():
     
     if bancodedados.proprietario == []:
-        print('Ainda não há cadastros nesse banco de dados!')
+        print('Ainda não há Proprietários cadastrados!')
+        print('Não será possível fazer a operação!')
     else:
         listar() 
 
@@ -73,11 +74,40 @@ def excluir():
                     print('Cadastro excluído com sucesso!')
                     return
 
-            print('O ID não está na lista!')
+            print('O ID não foi encontrado na lista!')
  
 
 def editar():
-    oi = None
+    
+    if bancodedados.proprietario == []:
+        print('Ainda não há Proprietários cadastrados!')
+        print('Não será possível fazer a operação!')
+    else:
+        
+        listar() 
+        
+        menus.secundario()
+        parametro = int(input('Digite o parametro pelo qual deseja editar o cadastro: '))
+
+        match parametro:
+            case 1: 
+            case 2:
+            case 3:
+            case 4:
+            case 0: #Voltar
+                print('......Voltando......')
+        while True:
+
+            cadastro = int(input('Digite o ID do cadastro que deseja excluir: '))
+
+            for proprietario in bancodedados.proprietario:
+                if proprietario['id'] == cadastro:
+                    bancodedados.proprietario.remove(proprietario)
+                    uteis.limpar()
+                    print('Cadastro excluído com sucesso!')
+                    return
+
+            print('O ID não foi encontrado na lista!')
 
 
 def execute(funcao):
