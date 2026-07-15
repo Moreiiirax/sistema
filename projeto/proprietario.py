@@ -51,7 +51,12 @@ def listar():
         print('|    ID    |                          NOME                          |     CPF     |   IMÓVEIS  |')
         print('------------------------------------------------------------------------------------------------')
         for cadastro in bancodedados.proprietario:
-            print(f"|{cadastro['id']:^10}|{cadastro['nome']:^56}|{cadastro['cpf']:^13}|{cadastro['imovel']}|")
+            print(f"""|
+            {cadastro['id']:^10}|
+            {cadastro['nome']:^56}|
+            {cadastro['cpf']:^13}|
+            {cadastro['imovel']}|
+            """)
             print('------------------------------------------------------------------------------------------------')
 
 
