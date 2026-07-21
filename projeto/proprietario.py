@@ -86,7 +86,7 @@ def editar():
         
         listar() 
         
-        menus.secundario()
+        menus.menu_editar()
         parametro = int(input('Digite o parametro pelo qual deseja editar o cadastro: '))
 
         match parametro:

@@ -16,5 +16,5 @@ def menu_instituto():
 
 def menu_editar():
     menu_cabecalho()
-    print("1 - Id \n2 - Nome \n3 - CPF \n4 - Editar \n0 - Voltar ao Menu Anterior")
+    print("1 - Id \n2 - Nome \n3 - CPF \n0 - Voltar ao Menu Anterior")
     print("=" * 50)
