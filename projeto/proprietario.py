@@ -51,12 +51,7 @@ def listar():
         print('|    ID    |                          NOME                          |     CPF     |   IMÓVEIS  |')
         print('------------------------------------------------------------------------------------------------')
         for cadastro in bancodedados.proprietario:
-            print(f"""|
-            {cadastro['id']:^10}|
-            {cadastro['nome']:^56}|
-            {cadastro['cpf']:^13}|
-            {cadastro['imovel']}|
-            """)
+            print(f"""|{cadastro['id']:^10}|{cadastro['nome']:^56}|{cadastro['cpf']:^13}|{cadastro['imovel']}|""")
             print('------------------------------------------------------------------------------------------------')
 
 
@@ -96,9 +91,13 @@ def editar():
 
         match parametro:
             case 1: 
+                oi = None
             case 2:
+                oi = None
             case 3:
+                oi = None
             case 4:
+                oi = None
             case 0: #Voltar
                 print('......Voltando......')
         while True:

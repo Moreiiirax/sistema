@@ -10,7 +10,7 @@ def menu_funcao():
 
 
 def menu_instituto():
-   menu_cabecalho()
+    menu_cabecalho()
     print("1 - Proprietário \n2 - Imóvel \n3 - Inquilino \n4 - Contrato \n0 - Voltar ao Menu Anterior")
     print("=" * 50)
 
