@@ -85,30 +85,17 @@ def editar():
     else:
         
         listar() 
-        
-        menus.menu_editar()
-        parametro = int(input('Digite o parametro pelo qual deseja editar o cadastro: '))
 
-        match parametro:
-            case 1: 
-                oi = None
-            case 2:
-                oi = None
-            case 3:
-                oi = None
-            case 4:
-                oi = None
-            case 0: #Voltar
-                print('......Voltando......')
         while True:
 
-            cadastro = int(input('Digite o ID do cadastro que deseja excluir: '))
+            cadastro = int(input('Digite o ID do cadastro que deseja editar: '))
 
             for proprietario in bancodedados.proprietario:
                 if proprietario['id'] == cadastro:
-                    bancodedados.proprietario.remove(proprietario)
+                    proprietario['nome'] = input('Digite o novo nome: ')
+                    proprietario['cpf'] = input('Digite o novo CPF:')
                     uteis.limpar()
-                    print('Cadastro excluído com sucesso!')
+                    print('Cadastro editado com sucesso!')
                     return
 
             print('O ID não foi encontrado na lista!')
