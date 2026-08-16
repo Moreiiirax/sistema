@@ -21,7 +21,7 @@ Este projeto está sendo desenvolvido como parte dos meus estudos em Programaç�
 ## Funcionalidades implementadas
 
 - [x] Cadastro, Listagem, Exclusão e Edição de proprietários
-- [] Cadastro, Listagem, Exclusão e Edição de imóveis
+- [ ] Cadastro, Listagem, Exclusão e Edição de imóveis
 - [ ] Cadastro, Listagem, Exclusão e Edição de inquilinos
 - [ ] Cadastro, Listagem, Exclusão e Edição de Contratos
 - [ ] Relatórios
